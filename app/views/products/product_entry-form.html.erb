@@ -1,0 +1,25 @@
+<h1> Product Entry Form </h1>
+
+  <%= form_tag '/create' do %>
+
+  <%= label_tag :title %>
+  <%= text_field_tag :title %>
+
+  <%= label_tag :image %>
+  <%= text_field_tag :image %>
+
+  <%= label_tag :desciption %>
+  <%= text_field_tag :description %>
+
+  <%= label_tag :category %>
+  <%= text_field_tag :category %>
+
+  <%= label_tag :brand %>
+  <%= label_field_tag :brand %> 
+
+
+  <%= Submit_tag "Submit" %>
+
+  <% end %>
+
+

@@ -1,0 +1,9 @@
+<h1>Home</h1>
+<p><% @products.each do |product|%></p>
+<%=product.title%>
+<br>
+<%=product.description%>
+<br>
+<%= number_to_currency(product.price)%>
+<img src="<%= product.image%>" width="104">
+<% end %>

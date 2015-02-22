@@ -1,0 +1,36 @@
+<h1>Products</h1>
+
+<% @products.each do |product| %>
+
+  <h2><%= product.title %></h2>
+  <table>
+     <tr>
+     <img src="<%= product.image %>"/>
+     </tr>
+     <tr>
+      <td>Category:</td>
+      <td><%= product.category %></td>
+     </tr>
+
+     <tr>
+      <td>Brand:</td>
+      <td><%= product.brand %></td>
+     </tr>
+
+     <tr>
+      <td>Sale Type</td>
+      <td><%= product.sale_message %></td>
+     </tr>
+
+     <tr>
+      <td> Price </td>
+      <td>$<%= product.price %></td>
+     </tr>
+
+     <tr>
+      <td>Sales Tax</tr>
+      <td>$<%= product.sales_tax %></td>
+     </tr>
+  </table>
+  
+<% end %> 
